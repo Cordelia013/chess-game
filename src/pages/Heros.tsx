@@ -1,13 +1,19 @@
 import title from "../assets/FIANCHETTO.svg";
 import { Separate } from "./components/separate";
 import img_hero from "../assets/heros_img_bg.jpg";
+import Navigation from "../layout/Navigation";
+
+
+
+
 export default function Heros() {
   return (
     <header className="col-span-12 h-screen">
+      <Navigation />
       {/* title page */}
       <h1 className="flex items-center justify-center gap-4 text-4xl font-bold my-4">
         <img
-          className=""
+          className="w-full"
           src={title}
           alt="Titre de la page des d'acceuil - fianchetto"
         />
@@ -27,20 +33,20 @@ export default function Heros() {
       </div>
       <Separate height="h-0.5" />
       {/* section image h2 + photo */}
+      <div className="w-full grid grid-cols-12 ">
+        <div className=" col-start-3 relative">
+          <h2 className="absolute bottom-0 font-bold text-left leading-tight-fluid w-[61vw] text-custom-black text-fluid-4xl mix-blend-multiply">
+            La stratégie
+            <br />
+            d'abord.
+          </h2>
+        </div>
 
-      <div className="w-full">
-        <div className="flex relative">
-          <div className="w-[50vw] relative">
-            <h2 className="absolute bottom-0 font-bold leading-[100px] w-[61vw] text-custom-black text-fluid-4xl mix-blend-multiply">
-              La stratégie
-              <br />
-              d'abord.
-            </h2>
-          </div>
+        <div className="col-span-4 col-start-7 col-end-13">
           <img
             src={img_hero}
             alt="Hero image"
-            className="w-[50vw] object-cover"
+            className="w-full object-cover"
           />
         </div>
       </div>
@@ -48,12 +54,12 @@ export default function Heros() {
       <Separate height="h-0.5   my-4" />
       <div className="w-full ">
         <div className="grid grid-cols-12">
-          <div className="col-start-6 col-end-12 text-left mx-4">
-            <p className="text-fluid-base  mb-7  ">
-              Explorez les tactiques et les stratégies pour améliorer vos
-              compétences au jeu d'échecs.
+          <div className="col-start-6 col-end-12 text-left mx-3 mb-4">
+            <p className="text-fluid-base  mb-7 text-fluid-xl leading-tight-fluid">
+              Rejoignez le club d’échecs de Mat Carlsen, <br /> ouvert à tous
+              les niveaux.
             </p>
-            <button className="bg-custom-secondary uppercase text-custom-white font-bold py-5 px-8 rounded">
+            <button className="bg-custom-secondary uppercase text-custom-white font-bold mb-7 py-5 px-8 rounded">
               s'inscrire
             </button>
           </div>

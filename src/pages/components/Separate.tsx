@@ -3,5 +3,5 @@ interface SeparateProps {
 }
 
 export function Separate({ height }: SeparateProps) {
-  return <div className={`w-full ${height} bg-custom-secondary`} />;
+  return <div className={`w-full ${height} bg-custom-black`} />;
 }

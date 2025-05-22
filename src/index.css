@@ -61,14 +61,14 @@
    * Maximum: 10rem (160px)
    * S'adapte selon la largeur de l'écran (7vw + 2.5rem)
    */
-  --font-size-fluid-4xl: clamp(2.5rem, 7vw + 2.5rem, 40rem);
+  --font-size-fluid-4xl: clamp(2.5rem, 7vw + 2.5rem, 13rem);
 
   /* Hauteur de ligne fluide
    * Minimum: 1.1
    * Maximum: 1.3
    * S'adapte selon la largeur de l'écran (1vw + 1)
    */
-  --line-height-tight-fluid: clamp(1.1, 1vw + 1, 1.3);
+  --line-height-tight-fluid: clamp(0.6, 0 + 0.9, 1.8);
 }
 
 @layer utilities {
@@ -126,5 +126,13 @@
 
   .bg-custom-white {
     background-color: var(--color-white);
+  }
+
+   .text-custom-black {
+    color: var( --color-black);
+  }
+
+  .bg-custom-black {
+    background-color: var( --color-black);
   }
 }
