@@ -1,22 +1,19 @@
 
-import { GridProvider,  GridOverlay, GridControl } from "./grid";
+import { GridProvider,  GridOverlay, GridControl, Grid } from "./grid";
 import Navigation from "./layout/Navigation";
+import "./App.css"
+import Heros from "./pages/Heros";
 
 export default function App() {
   return (
     <GridProvider>
       <GridControl />
       <GridOverlay />
-        
-    
-      <div className="grid grid-cols-12 gap-4">
-   
-           <Navigation />
-    
-       
-          <h1 className="text-2xl font-bold mb-4 col-span-12">Démo Grid System</h1>
-  
-      </div>
+
+      <Grid>
+        <Navigation />
+      <Heros />
+      </Grid>
     </GridProvider>
   );
 }

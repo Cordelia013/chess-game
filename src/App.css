@@ -4,15 +4,39 @@
   margin: 0 ;
   padding: 0;
   text-align: center;
+
+   /* Système de base fluide */
+  --viewport-factor: 1vw;
+  --text-base-size: 1rem;
+  --text-scale-ratio: 1.25;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
+* {
+  font-family: 'Satoshi', sans-serif;
 }
 
-.grid-item {
-  grid-column: span 1;
+
+.text-adaptive {
+  --min-size: calc(var(--text-base-size) * 1.5);
+  --max-size: calc(var(--text-base-size) * 8);
+  --preferred-size: calc(var(--text-base-size) * 2 + var(--viewport-factor) * 4);
+  
+  font-size: clamp(
+    var(--min-size),
+    var(--preferred-size),
+    var(--max-size)
+  );
 }
 
+/* Variations pour différents types de contenu */
+.text-adaptive--heading {
+  --min-size: 2rem;
+  --max-size: 8rem;
+  --preferred-size: calc(2rem + 5vw);
+}
+
+.text-adaptive--body {
+  --min-size: 1rem;
+  --max-size: 1.5rem;
+  --preferred-size: calc(1rem + 0.5vw);
+}
