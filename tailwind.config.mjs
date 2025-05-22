@@ -13,6 +13,12 @@ export default {
       },
       lineHeight: {
         'tight-fluid': 'clamp(1.1, 1vw + 1, 1.3)',
+      },
+      colors: {
+        primary: '#00311F',
+        secondary: '#B89B6B',
+        white: '#F7F0DE',
+        black: '#0D1010',
       }
     }
   }
