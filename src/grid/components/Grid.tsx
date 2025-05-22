@@ -10,14 +10,14 @@ const GRID_COLS_CLASSES: Record<number, string> = {
 
 const GAP_CLASSES: Record<string, string> = {
   mobile: "gap-x-4",
-  tablet: "gap-x-6",
-  desktop: "gap-x-8",
+  tablet: "gap-x-4",
+  desktop: "gap-x-4",
 };
 
 const MARGIN_CLASSES: Record<string, string> = {
   mobile: "mx-4",
-  tablet: "mx-8",
-  desktop: "mx-16",
+  tablet: "mx-4",
+  desktop: "mx-4",
 };
 
 export const Grid: React.FC<{ children: React.ReactNode }> = ({ children }) => {
