@@ -1,7 +1,8 @@
 import title from "../assets/FIANCHETTO.svg";
-import { Separate } from "./components/separate";
+
 import img_hero from "../assets/heros_img_bg.jpg";
 import Navigation from "../layout/Navigation";
+import { Separate } from "./components/separate";
 
 export default function Heros() {
   return (
