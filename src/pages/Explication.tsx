@@ -5,8 +5,8 @@ import Grid_explain from "./components/grid_explainPage/grid_explain";
 
 export default function Explication() {
   return (
-    <div className="w-screen h-screen mt-4 ">
-      <div className="relative">
+    <div className="w-screen h-screen mt-4 relative ">
+      <div className="">
         <p className="absolute top-0 left-0 right-0 text-white p-4 bg-opacity-50 mix-blend-difference text-[122px] text-left leading-24">
           Le fianchetto est une stratégie d’ouverture aux échecs où le fou est
           placé en retrait, derrière un pion latéral avancé. Ce positionnement

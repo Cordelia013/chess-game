@@ -1,24 +1,14 @@
-import title from "../assets/FIANCHETTO.svg";
-import { Separate } from "./components/separate";
-import img_hero from "../assets/heros_img_bg.jpg";
-import Navigation from "../layout/Navigation";
 
 
-
-
-export default function Heros() {
+export default function About() {
   return (
     <header className="relative col-span-12 h-screen mb-4 ">
-      <Navigation />
+    
       {/* title page */}
       <h1 className="flex items-center justify-center gap-4 text-4xl font-bold my-4">
-        <img
-          className="w-full"
-          src={title}
-          alt="Titre de la page des d'acceuil - fianchetto"
-        />
+        titre
       </h1>
-      <Separate height="h-4" />
+     
 
       {/* sous information */}
       <div className="grid grid-cols-12  my-4  text-sm">
@@ -31,7 +21,7 @@ export default function Heros() {
           <li className="col-span-3 text-left">C8-0</li>
         </ul>
       </div>
-      <Separate height="h-0.5" />
+    
       {/* section image h2 + photo */}
       <div className="w-full grid grid-cols-12 ">
         <div className=" col-start-3 relative">
@@ -43,15 +33,11 @@ export default function Heros() {
         </div>
 
         <div className="col-span-4 col-start-7 col-end-13">
-          <img
-            src={img_hero}
-            alt="Hero image"
-            className="w-full object-cover"
-          />
+          
         </div>
       </div>
       {/* section info header */}
-      <Separate height="h-0.5   my-4" />
+   
       <div className="w-full ">
         <div className="grid grid-cols-12">
           <div className="col-start-6 col-end-12 text-left mx-3 mb-4">
@@ -92,3 +78,4 @@ export default function Heros() {
     </header>
   );
 }
+
