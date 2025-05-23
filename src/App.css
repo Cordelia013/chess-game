@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Changé de overflow-x: hidden à overflow: hidden */
+  overflow-x: hidden; /* Permet le scroll vertical mais pas horizontal */
   color: var(--color-primary);
 }
 
@@ -26,7 +26,8 @@ body {
   box-sizing: border-box;
   /* max-width: 1480px; */
   text-align: center;
-  overflow: hidden; /* Changé de overflow-y: hidden à overflow: hidden */
+  width: 100%;
+  min-height: 100vh;
 
   /* Système de base fluide */
   --viewport-factor: 1vw;
@@ -60,4 +61,27 @@ body {
   --min-size: 1rem;
   --max-size: 1.5rem;
   --preferred-size: calc(1rem + 0.5vw);
+}
+
+.mix-blend-difference {
+  mix-blend-mode: difference !important;
+  isolation: isolate;
+}
+.container {
+    width: 100%;
+    @media (width >= 40rem /* 640px */) {
+        max-width: 40rem /* 640px */;
+    }
+    @media (width >= 48rem /* 768px */) {
+        max-width: 48rem /* 768px */;
+    }
+    @media (width >= 64rem /* 1024px */) {
+        max-width: 64rem /* 1024px */;
+    }
+    @media (width >= 80rem /* 1280px */) {
+        max-width: 80rem /* 1280px */;
+    }
+    @media (width >= 96rem /* 1536px */) {
+        max-width: 96rem /* 1536px */;
+    }
 }

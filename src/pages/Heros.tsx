@@ -3,92 +3,93 @@ import { Separate } from "./components/separate";
 import img_hero from "../assets/heros_img_bg.jpg";
 import Navigation from "../layout/Navigation";
 
-
-
-
 export default function Heros() {
   return (
-    <header className="relative col-span-12 h-screen mb-4 ">
-      <Navigation />
-      {/* title page */}
-      <h1 className="flex items-center justify-center gap-4 text-4xl font-bold my-4">
-        <img
-          className="w-full"
-          src={title}
-          alt="Titre de la page des d'acceuil - fianchetto"
-        />
-      </h1>
-      <Separate height="h-4" />
+    <section className="relative w-full h-screen">
+      <div className=" mx-auto px-4 h-full flex flex-col">
+        <Navigation />
 
-      {/* sous information */}
-      <div className="grid grid-cols-12  my-4  text-sm">
-        <ul className="col-span-12 grid grid-cols-12 gap-4">
-          <li className="col-span-3 text-left">
-            Club d'échecs pour tous les niveaux
-          </li>
-          <li className="col-span-3 text-left">Intro /</li>
-          <li className="col-span-3 text-left">[En-tête]</li>
-          <li className="col-span-3 text-left">C8-0</li>
-        </ul>
-      </div>
-      <Separate height="h-0.5" />
-      {/* section image h2 + photo */}
-      <div className="w-full grid grid-cols-12 ">
-        <div className=" col-start-3 relative">
-          <h2 className="absolute bottom-0 font-bold text-left leading-tight-fluid w-[61vw] text-custom-black text-fluid-4xl mix-blend-multiply">
-            La stratégie
-            <br />
-            d'abord.
-          </h2>
-        </div>
-
-        <div className="col-span-4 col-start-7 col-end-13">
+        {/* Title */}
+        <h1 className="flex items-center justify-center my-4">
           <img
-            src={img_hero}
-            alt="Hero image"
-            className="w-full object-cover"
+            className="w-full max-w-6xl px-4"
+            src={title}
+            alt="Titre de la page d'accueil - Fianchetto"
           />
+        </h1>
+        <Separate height="h-4" />
+
+        {/* Sub-information */}
+        <div className="grid grid-cols-12 gap-4 my-4 text-sm">
+          <div className="col-span-3 text-left">
+            Club d'échecs pour tous les niveaux
+          </div>
+          <div className="col-span-3 text-left">Intro /</div>
+          <div className="col-span-3 text-left">[En-tête]</div>
+          <div className="col-span-3 text-left">C8-0</div>
         </div>
-      </div>
-      {/* section info header */}
-      <Separate height="h-0.5   my-4" />
-      <div className="w-full ">
-        <div className="grid grid-cols-12">
-          <div className="col-start-6 col-end-12 text-left mx-3 mb-4">
-            <p className="text-fluid-base  mb-7 text-fluid-xl leading-tight-fluid">
-              Rejoignez le club d’échecs de Mat Carlsen, <br /> ouvert à tous
-              les niveaux.
-            </p>
-            <button className="bg-custom-secondary uppercase text-custom-white font-bold mb-7 py-5 px-8 rounded">
-              s'inscrire
-            </button>
+        <Separate height="h-0.5" />
+
+        {/* Main content area */}
+        <div className="flex-1 flex items-center">
+          <div className="w-full grid grid-cols-12 gap-4">
+            <div className="col-span-12 md:col-span-6 relative flex items-end">
+              <h2 className="font-bold text-left leading-tight-fluid text-custom-black text-fluid-4xl">
+                La stratégie
+                <br />
+                d'abord.
+              </h2>
+            </div>
+
+            <div className="col-span-12 md:col-span-6">
+              <img
+                src={img_hero}
+                alt="Hero image"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom section */}
+        <div className="pb-8">
+          <Separate height="h-0.5 my-4" />
+          <div className="grid grid-cols-12 gap-4">
+            <div className="col-span-12 md:col-span-6 md:col-start-7 text-left">
+              <p className="text-fluid-xl leading-tight mb-7">
+                Rejoignez le club d'échecs de Mat Carlsen, <br /> ouvert à tous
+                les niveaux.
+              </p>
+              <button className="bg-custom-secondary uppercase text-custom-white font-bold py-5 px-8 rounded hover:bg-opacity-90 transition-all">
+                s'inscrire
+              </button>
+            </div>
+          </div>
+
+          {/* Scroll indicator */}
+          <div className="flex justify-end mt-8">
+            <div className="text-sm font-black uppercase flex items-center gap-2">
+              scroll to explore
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="rotate-45"
+              >
+                <path
+                  d="M5 12H19M19 12L12 5M19 12L12 19"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
-      {/* sous information */}
-      <div className="w-full ">
-        <ul className="flex justify-end font-black text-sm">
-          <li className="text-left uppercase flex items-center gap-2">
-            scroll to explore
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="rotate-45"
-            >
-              <path
-                d="M5 12H19M19 12L12 5M19 12L12 19"
-                stroke="currentColor"
-                strokeWidth="3" // Épaisseur augmentée de 2 à 4
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </li>
-        </ul>
-      </div>
-    </header>
+    </section>
   );
 }

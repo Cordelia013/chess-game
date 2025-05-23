@@ -1,6 +1,6 @@
 import gridData from "./grid_explain.json";
+import { useState, useEffect } from "react";
 
-// Interfaces pour typer les données de la grille
 interface GridConfig {
   columns: number;
   rows: number;
@@ -15,21 +15,56 @@ interface GridData {
 
 export default function GridExplainOptimized() {
   const { gridConfig, cellColors } = gridData as GridData;
-  const { columns, rows, gap, defaultColor } = gridConfig;
+  const { gap, defaultColor } = gridConfig;
+
+  // Configuration responsive de la grille
+  const [gridDimensions, setGridDimensions] = useState({
+    columns: 12,
+    rows: 12,
+  });
+
+  useEffect(() => {
+    const updateGrid = () => {
+      const width = window.innerWidth;
+
+      if (width < 640) {
+        // Mobile : grille 6x8
+        setGridDimensions({ columns: 6, rows: 8 });
+      } else if (width < 1024) {
+        // Tablette : grille 8x10
+        setGridDimensions({ columns: 8, rows: 10 });
+      } else {
+        // Desktop : grille complète 12x12
+        setGridDimensions({
+          columns: gridConfig.columns,
+          rows: gridConfig.rows,
+        });
+      }
+    };
+
+    updateGrid();
+    window.addEventListener("resize", updateGrid);
+
+    return () => window.removeEventListener("resize", updateGrid);
+  }, [gridConfig.columns, gridConfig.rows]);
+
+  const { columns, rows } = gridDimensions;
 
   return (
-    <div className="w-screen h-screen overflow-hidden bg-gray-900">
-      {/* Container principal avec calculs dynamiques */}
+    <div className="w-full h-full overflow-hidden">
       <div
         className="w-full h-full grid"
         style={{
-          gridTemplateColumns: `repeat(${columns}, calc(100vw / ${columns}))`,
-          gridTemplateRows: `repeat(${rows}, calc(100vh / ${rows}))`,
+          gridTemplateColumns: `repeat(${columns}, 1fr)`,
+          gridTemplateRows: `repeat(${rows}, 1fr)`,
           gap: `${gap}px`,
         }}
       >
         {Array.from({ length: columns * rows }, (_, index) => {
-          const backgroundColor = cellColors[index.toString()] || defaultColor;
+          // Adapter l'index pour les grilles réduites
+          const originalIndex = index % (gridConfig.columns * gridConfig.rows);
+          const backgroundColor =
+            cellColors[originalIndex.toString()] || defaultColor;
 
           return (
             <div
@@ -38,22 +73,14 @@ export default function GridExplainOptimized() {
               style={{
                 backgroundColor,
                 color: backgroundColor === "#000000" ? "#ffffff" : "#000000",
-                width: `calc(100vw / ${columns})`,
-                height: `calc(100vh / ${rows})`,
               }}
             >
-              {/* Affichage optionnel du numéro de cellule */}
+              {/* Optionnel : afficher le numéro de cellule */}
               {/* {index + 1} */}
             </div>
           );
         })}
       </div>
-
-      {/* Indicateur en bas à droite pour montrer les dimensions dynamiques */}
-      {/* <div className="fixed bottom-4 right-4 bg-black bg-opacity-70 text-white p-2 rounded text-xs font-mono">
-        Grille: {columns}x{rows} | Cellule: calc(100vw/{columns}) x calc(100vh/
-        {rows})
-      </div> */}
     </div>
   );
 }
