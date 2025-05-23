@@ -6,6 +6,10 @@ import Explication from "./pages/Explication";
 import About from "./pages/About";
 import { useEffect } from "react";
 import Lenis from "lenis";
+import Actuality from "./pages/Actuality";
+import Footer from "./pages/Footer";
+import Inscription from "./pages/Inscription";
+import Joint from "./pages/Joint";
 
 export default function App() {
   useEffect(() => {
@@ -43,6 +47,10 @@ export default function App() {
         <Heros />
         <Explication />
         <About />
+        <Joint />
+        <Actuality />
+        <Inscription />
+        <Footer />
       </div>
     </GridProvider>
   );

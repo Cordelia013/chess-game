@@ -2,6 +2,7 @@ import title from "../assets/FIANCHETTO.svg";
 
 import img_hero from "../assets/heros_img_bg.jpg";
 import Navigation from "../layout/Navigation";
+import Button from "./components/Button";
 import {Separate} from "./components/Separate";
 
 
@@ -63,9 +64,7 @@ export default function Heros() {
                 Rejoignez le club d'échecs de Mat Carlsen, <br /> ouvert à tous
                 les niveaux.
               </p>
-              <button className="bg-custom-secondary uppercase text-custom-white font-bold py-5 px-8 rounded hover:bg-opacity-90 transition-all">
-                s'inscrire
-              </button>
+             <Button text={"S'incrire"} />
             </div>
           </div>
 
