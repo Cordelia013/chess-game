@@ -12,7 +12,7 @@ export default function About() {
           <h2 className=" text-fluid-4xl font-bold align-bottom leading-42 text-left">
             Débutants / <br /> Expérimentés{" "}
           </h2>
-          <p className="text-fluid-base relative text-left left-104 top-14">
+          <p className="text-3xl relative text-left left-104 top-14">
             Un club d’échecs fondé sur la stratégie, <br /> ouvert à tous les
             profils.
           </p>
