@@ -19,25 +19,20 @@ export default function About() {
 
           <div className="w-4xl ml-auto">
             <div className="flex flex-row gap-4 mt-50 ">
-              <h6 className="font-black text-2xl">A propos /</h6>
+              <h6 className="font-black text-sm">A propos /</h6>
               <div>
-                <p className="text-2xl text-left">
-                Fondé par Mat Carlsen (aucun lien, mais beaucoup d’ambition),
-                notre <br /> club accueille joueurs débutants et expérimentés
-                dans une ambiance <br /> stratégique mais détendue. En ligne ou
-                en personne, <br /> on vous attend au prochain coup !
-              </p>
+                <p className="text-sm text-left">
+                  Fondé par Mat Carlsen (aucun lien, mais beaucoup d’ambition),
+                  notre <br /> club accueille joueurs débutants et expérimentés
+                  dans une ambiance <br /> stratégique mais détendue. En ligne
+                  ou en personne, <br /> on vous attend au prochain coup !
+                </p>
                 <Separate height={"h-0.5 mt-8 "} />
-                   <div className="flex mt-8">
-              <Button text={"En savoir plus"}  />
-            </div>
-
+                <div className="flex mt-8">
+                  <Button text={"En savoir plus"} />
+                </div>
               </div>
-              
             </div>
-
-       
-         
           </div>
         </div>
 
