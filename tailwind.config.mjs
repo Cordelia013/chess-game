@@ -1,5 +1,15 @@
 // tailwind.config.js
 export default {
+    content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  safelist: [
+    'h-0.5',
+    'h-4',
+    'my-4',
+    'bg-custom-black'
+  ],
   theme: {
     extend: {
       fontSize: {
