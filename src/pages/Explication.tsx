@@ -1,12 +1,11 @@
-import { Grid_explain } from "./components/grid_explain";
+import Grid_explain from "./components/grid_explainPage/grid_explain";
 
 // import bg_explain from "../assets/bg-explain.jpg";
 
 
-
 export default function Explication() {
   return (
-    <div className="w-screen h-screen">
+    <div className="w-screen h-screen mt-4 ">
       <div className="relative">
         <p className="absolute top-0 left-0 right-0 text-white p-4 bg-opacity-50 mix-blend-difference text-[122px] text-left leading-24">
           Le fianchetto est une stratégie d’ouverture aux échecs où le fou est
@@ -18,8 +17,7 @@ export default function Explication() {
           précipitation. Fianchetto, c’est un hommage à l’élégance stratégique —
           une manière de jouer, apprendre et de se placer avec intention.
         </p>
-              <Grid_explain />
-              
+        <Grid_explain />
       </div>
     </div>
   );

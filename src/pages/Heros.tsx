@@ -8,7 +8,7 @@ import Navigation from "../layout/Navigation";
 
 export default function Heros() {
   return (
-    <header className="col-span-12 h-screen">
+    <header className="col-span-12 h-screen mb-4 ">
       <Navigation />
       {/* title page */}
       <h1 className="flex items-center justify-center gap-4 text-4xl font-bold my-4">
@@ -66,7 +66,7 @@ export default function Heros() {
         </div>
       </div>
       {/* sous information */}
-      <div className="w-full">
+      <div className="w-full ">
         <ul className="flex justify-end font-black text-sm">
           <li className="text-left uppercase flex items-center gap-2">
             scroll to explore
