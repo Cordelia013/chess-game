@@ -37,9 +37,7 @@ body {
 }
 /* Système de base fluide avec des variables CSS */
 :root {
-  --viewport-factor: 1vw; /* Facteur de taille basé sur la largeur de la fenêtre */
-  --text-base-size: 1rem; /* Taille de base du texte */
-  --text-scale-ratio: 1.25; /* Ratio d'échelle pour les tailles de texte */
+
   
   /* Couleurs */
   --color-primary: #000000;
@@ -82,32 +80,32 @@ body {
 }
 
 /* Styles pour les conteneurs adaptatifs */
-.container-fluid {
-  width: 100%;
-  padding: 0 1rem; /* Ajoute un peu de marge intérieure */
-}
+
 .container {
-    width: 100%;
-    font-size: 1rem;
-    @media (width >= 40rem /* 640px */) {
-      max-width: 40rem /* 640px */;
-
+  /* Mobile first approach - syntaxe standard */
+    @media (min-width: 48rem) {
+      /* 768px */
+      max-width: 48rem;
     }
-    @media (width >= 48rem /* 768px */) {
-      max-width: 48rem /* 768px */;
-
-    }
-    @media (width >= 64rem /* 1024px */) {
-      max-width: 64rem /* 1024px */;
-
-    }
-    @media (width >= 80rem /* 1280px */) {
-      max-width: 80rem /* 1280px */;
- 
-    }
-    @media (width >= 96rem /* 1536px */) {
-      max-width: 96rem /* 1536px */;
   
+    @media (min-width: 64rem) {
+      /* 1024px */
+      max-width: 64rem;
+    }
+  
+    @media (min-width: 90rem) {
+      /* 1440px */
+      max-width: 90rem;
+    }
+  
+    @media (min-width: 96rem) {
+      /* 1536px */
+      max-width: 96rem;
+    }
+
+    @media (min-width: 120rem) {
+      /* 1920px - Très large écran */
+      max-width: 120rem;
     }
 }
 
