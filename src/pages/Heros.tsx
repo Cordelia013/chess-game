@@ -21,7 +21,7 @@ export default function Heros() {
             alt="Titre de la page d'accueil - Fianchetto"
           />
         </h1>
-        <Separate height="h-4"    />
+        <Separate height="h-0.5" />
 
         {/* Sub-information */}
         <div className="grid grid-cols-12 gap-4 my-4 text-sm">
@@ -64,7 +64,7 @@ export default function Heros() {
                 Rejoignez le club d'échecs de Mat Carlsen, <br /> ouvert à tous
                 les niveaux.
               </p>
-             <Button text={"S'incrire"} />
+              <Button text={"S'incrire"} />
             </div>
           </div>
 
