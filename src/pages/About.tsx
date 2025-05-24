@@ -9,16 +9,16 @@ export default function About() {
       <Separate height={"h-0.5 mt-4"} />
       <div className="flex h-full text-custom-black  ">
         <div className="w-[67vw] mt-12">
-          <h2 className=" text-fluid-4xl font-bold align-bottom leading-42 text-left">
+          <h2 className=" text-fluid-4xl font-bold align-bottom leading-[2.625rem] text-left">
             Débutants / <br /> Expérimentés{" "}
           </h2>
-          <p className="text-3xl relative text-left left-104 top-14">
+          <p className="text-3xl relative text-left left-[26rem] top-14">
             Un club d’échecs fondé sur la stratégie, <br /> ouvert à tous les
             profils.
           </p>
 
           <div className="w-4xl ml-auto">
-            <div className="flex flex-row gap-4 mt-50 ">
+            <div className="flex flex-row gap-4 mt-[12.5rem] ">
               <h6 className="font-black text-sm">A propos /</h6>
               <div>
                 <p className="text-sm text-left">

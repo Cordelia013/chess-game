@@ -16,7 +16,7 @@ export default function Heros() {
         {/* Title */}
         <h1 className="flex items-center justify-center my-4">
           <img
-            className="w-full max-w-6xl px-4"
+            className="w-full px-4"
             src={title}
             alt="Titre de la page d'accueil - Fianchetto"
           />
