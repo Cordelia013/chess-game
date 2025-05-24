@@ -5,7 +5,7 @@ import Button from "./components/Button";
 
 export default function About() {
   return (
-    <section className="relative w-full h-screen bg-custom-white pt-2 pb-6 px-4">
+    <section className="relative w-full h-screen pt-2 pb-6 px-4">
       <Separate height={"h-0.5 mt-4"} />
       <div className="flex h-full text-custom-black  ">
         <div className="w-[67vw] mt-12">
