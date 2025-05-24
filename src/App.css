@@ -3,6 +3,7 @@ body {
   padding: 0;
   overflow-x: hidden; /* Permet le scroll vertical mais pas horizontal */
   color: var(--color-primary);
+  
 }
 
 /* Supprimer complètement les styles de scrollbar ou les masquer */
@@ -18,7 +19,6 @@ body::-webkit-scrollbar {
 
 /* Pour Firefox - masquer la scrollbar */
 body {
-  scrollbar-width: none; /* Changé de "thin" à "none" */
   -ms-overflow-style: none; /* Pour IE et Edge */
 }
 
@@ -28,15 +28,28 @@ body {
   text-align: center;
   width: 100%;
   min-height: 100vh;
+ font-size: 16px;
 
-  /* Système de base fluide */
+  /* Système de base fluide
   --viewport-factor: 1vw;
   --text-base-size: 1rem;
-  --text-scale-ratio: 1.25;
+  --text-scale-ratio: 1.25; */
+}
+/* Système de base fluide avec des variables CSS */
+:root {
+  --viewport-factor: 1vw; /* Facteur de taille basé sur la largeur de la fenêtre */
+  --text-base-size: 1rem; /* Taille de base du texte */
+  --text-scale-ratio: 1.25; /* Ratio d'échelle pour les tailles de texte */
+  
+  /* Couleurs */
+  --color-primary: #000000;
+  --color-secondary: #ffffff;
+  --color-accent: #ff0000; /* Exemple de couleur d'accent */
 }
 
-/* Reste du CSS inchangé */
+
 * {
+ 
   font-family: "Satoshi", sans-serif;
 }
 
@@ -67,21 +80,35 @@ body {
   mix-blend-mode: difference !important;
   isolation: isolate;
 }
+
+/* Styles pour les conteneurs adaptatifs */
+.container-fluid {
+  width: 100%;
+  padding: 0 1rem; /* Ajoute un peu de marge intérieure */
+}
 .container {
     width: 100%;
+    font-size: 1rem;
     @media (width >= 40rem /* 640px */) {
-        max-width: 40rem /* 640px */;
+      max-width: 40rem /* 640px */;
+
     }
     @media (width >= 48rem /* 768px */) {
-        max-width: 48rem /* 768px */;
+      max-width: 48rem /* 768px */;
+
     }
     @media (width >= 64rem /* 1024px */) {
-        max-width: 64rem /* 1024px */;
+      max-width: 64rem /* 1024px */;
+
     }
     @media (width >= 80rem /* 1280px */) {
-        max-width: 80rem /* 1280px */;
+      max-width: 80rem /* 1280px */;
+ 
     }
     @media (width >= 96rem /* 1536px */) {
-        max-width: 96rem /* 1536px */;
+      max-width: 96rem /* 1536px */;
+  
     }
 }
+
+
