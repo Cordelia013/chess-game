@@ -1,14 +1,12 @@
 #root {
-  margin: 40px 74px;
+  margin: 0
 }
 
 body {
-
   width: 100vw;
-  background: hsla(0, 0%, 4%, 1);
-  margin: auto;
-  color: hsla(0, 0%, 89%, 1);
-
+  height: 100vh;
+  overflow: hidden;
+  background-color: #F7F0DE;
 }
 
 .animate {
