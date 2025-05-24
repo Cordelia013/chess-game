@@ -41,7 +41,7 @@ export default function Heros() {
 
         <div className="grid grid-cols-12 gap-4 my-4 h-72 relative">
           {/* Image */}
-            <div className="col-span-12 md:col-start-7 md:col-span-6 ">
+            <div className="col-span-12 md:col-start-6 md:col-span-6 ">
             <img
               src={img_hero}
               alt="Hero image"

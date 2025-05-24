@@ -8,11 +8,10 @@ export default function Explication() {
 
       {/* Texte superposé directement */}
       <div
-        className="absolute inset-0 flex items-center justify-center "
-        style={{ mixBlendMode: "difference" }}
+        className="absolute inset-0 flex items-center justify-center mix-blend-difference"
       >
         <p className="text-white text-center md:text-left max-w-[95%]">
-          {/* Version mobile - texte plus court */}
+      
           <span className="block md:hidden text-xl sm:text-2xl leading-tight font-medium">
             Le fianchetto : une stratégie d'échecs où le fou est placé en
             retrait, permettant un contrôle subtil du centre. Nous avons choisi
@@ -30,7 +29,7 @@ export default function Explication() {
           </span>
 
           {/* Version desktop complète */}
-          <span className="hidden lg:block text-[52px] xl:text-[68px] 2xl:text-[110px] leading-[0.9]">
+          <span className="hidden lg:block text-[52px] xl:text-[70px] 2xl:text-[5em] leading-[0.9]">
             Le fianchetto est une stratégie d'ouverture aux échecs où le fou est
             placé en retrait, derrière un pion latéral avancé. Ce positionnement
             discret, mais redoutablement efficace, permet un contrôle subtil du
