@@ -1,112 +1,34 @@
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Permet le scroll vertical mais pas horizontal */
-  color: var(--color-primary);
-  
-}
-
-/* Supprimer complètement les styles de scrollbar ou les masquer */
-body::-webkit-scrollbar {
-  display: none; /* Masque la scrollbar dans Chrome, Safari et Opera */
-}
-
-/* Alternative : garder width: 0 si display: none ne fonctionne pas */
-body::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
-/* Pour Firefox - masquer la scrollbar */
-body {
-  -ms-overflow-style: none; /* Pour IE et Edge */
-}
-
 #root {
-  box-sizing: border-box;
-  /* max-width: 1480px; */
-  text-align: center;
-  width: 100%;
-  min-height: 100vh;
- font-size: 16px;
-
-  /* Système de base fluide
-  --viewport-factor: 1vw;
-  --text-base-size: 1rem;
-  --text-scale-ratio: 1.25; */
-}
-/* Système de base fluide avec des variables CSS */
-:root {
-
-  
-  /* Couleurs */
-  --color-primary: #000000;
-  --color-secondary: #ffffff;
-  --color-accent: #ff0000; /* Exemple de couleur d'accent */
+  margin: 40px 74px;
 }
 
+body {
 
-* {
- 
-  font-family: "Satoshi", sans-serif;
+  width: 100vw;
+  background: hsla(0, 0%, 4%, 1);
+  margin: auto;
+  color: hsla(0, 0%, 89%, 1);
+
 }
 
-.text-adaptive {
-  --min-size: calc(var(--text-base-size) * 1.5);
-  --max-size: calc(var(--text-base-size) * 8);
-  --preferred-size: calc(
-    var(--text-base-size) * 2 + var(--viewport-factor) * 4
-  );
-
-  font-size: clamp(var(--min-size), var(--preferred-size), var(--max-size));
+.animate {
+  animation: fadeIn 1s ease-in-out;
 }
 
-/* Variations pour différents types de contenu */
-.text-adaptive--heading {
-  --min-size: 2rem;
-  --max-size: 8rem;
-  --preferred-size: calc(2rem + 5vw);
-}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 
-.text-adaptive--body {
-  --min-size: 1rem;
-  --max-size: 1.5rem;
-  --preferred-size: calc(1rem + 0.5vw);
-}
-
-.mix-blend-difference {
-  mix-blend-mode: difference !important;
-  isolation: isolate;
-}
-
-/* Styles pour les conteneurs adaptatifs */
-
-.container {
-  /* Mobile first approach - syntaxe standard */
-    @media (min-width: 48rem) {
-      /* 768px */
-      max-width: 48rem;
-    }
-  
-    @media (min-width: 64rem) {
-      /* 1024px */
-      max-width: 64rem;
-    }
-  
-    @media (min-width: 90rem) {
-      /* 1440px */
-      max-width: 90rem;
-    }
-  
-    @media (min-width: 96rem) {
-      /* 1536px */
-      max-width: 96rem;
-    }
-
-    @media (min-width: 120rem) {
-      /* 1920px - Très large écran */
-      max-width: 120rem;
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
+.sticky {
+  position: sticky;
+  top: 0;
+}
