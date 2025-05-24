@@ -21,7 +21,7 @@ export default function Heros() {
             alt="Titre de la page d'accueil - Fianchetto"
           />
         </h1>
-        <Separate height={"h-4"}    />
+        <Separate height="h-4"    />
 
         {/* Sub-information */}
         <div className="grid grid-cols-12 gap-4 my-4 text-sm">
