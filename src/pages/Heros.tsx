@@ -1,4 +1,4 @@
-import title from "../assets/FIANCHETTO.svg";
+// import title from "../assets/FIANCHETTO.svg";
 
 import img_hero from "../assets/heros_img_bg.jpg";
 import Navigation from "../layout/Navigation";
@@ -13,13 +13,13 @@ export default function Heros() {
       <div className=" mx-auto px-4 h-full flex flex-col">
         <Navigation />
         {/* Title */}
-        <h1 className="flex items-center justify-center my-4">
+        {/* <h1 className="flex items-center justify-center my-4">
           <img
             className="w-full px-4"
             src={title}
             alt="Titre de la page d'accueil - Fianchetto"
           />
-        </h1>
+        </h1> */}
         <div className="bg-[#0D1010] h-8 w-full"></div>
         {/* Sub-information */}
         <div className="grid grid-cols-12 gap-4 my-4 text-sm">
