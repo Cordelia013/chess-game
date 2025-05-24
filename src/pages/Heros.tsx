@@ -12,7 +12,6 @@ export default function Heros() {
     <section className="relative w-full h-screen">
       <div className=" mx-auto px-4 h-full flex flex-col">
         <Navigation />
-
         {/* Title */}
         <h1 className="flex items-center justify-center my-4">
           <img
@@ -21,8 +20,7 @@ export default function Heros() {
             alt="Titre de la page d'accueil - Fianchetto"
           />
         </h1>
-        <Separate height="h-0.5" />
-
+        <div className="bg-[#0D1010] h-8 w-full"></div>
         {/* Sub-information */}
         <div className="grid grid-cols-12 gap-4 my-4 text-sm">
           <div className="col-span-3 text-left">
@@ -33,7 +31,6 @@ export default function Heros() {
           <div className="col-span-3 text-left">C8-0</div>
         </div>
         <Separate height="h-0.5" />
-
         {/* Main content area */}
         <div className="flex-1 flex items-center">
           <div className="w-full grid grid-cols-12 gap-4">
@@ -54,7 +51,6 @@ export default function Heros() {
             </div>
           </div>
         </div>
-
         {/* Bottom section */}
         <div className="pb-8">
           <Separate height="h-0.5 my-4" />
