@@ -9,7 +9,7 @@ import {Separate} from "./components/Separate";
 
 export default function Heros() {
   return (
-    <section className="relative w-full h-screen">
+    <section className="relative w-full h-screen bg-custom-white pt-2 pb-6 px-4">
       <div className=" mx-auto px-4 h-full flex flex-col">
         <Navigation />
         {/* Title */}
@@ -19,9 +19,12 @@ export default function Heros() {
             src={title}
             alt="Titre de la page d'accueil - Fianchetto"
           />
-           <div className="bg-[#0D1010] h-8 w-full"></div>
-        </h1>
        
+        </h1>
+        <div>
+              <Separate height="h-4" />
+        </div>
+    
         {/* Sub-information */}
         <div className="grid grid-cols-12 gap-4 my-4 text-sm">
           <div className="col-span-3 text-left">
