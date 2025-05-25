@@ -4,22 +4,23 @@ import img2_galerie from "../assets/Frame_67galerie-1.jpg";
 import img3_galerie from "../assets/Frame_67galerie-2.jpg";
 import img4_galerie from "../assets/Frame_67galerie-3.jpg";
 
+
 export default function Inscription() {
   return (
-    <section className="relative w-full h-screen  mt-8">
+    <section className="relative w-full h-screen  my-8">
    
     
-    <div className="h-[660px] flex">
+    <div className="h-full flex">
         
         {/* <!-- Galerie --> */}
         <div className="w-[237px] border-1 flex flex-col">
-            <div className="border-b h-12 flex items-center px-4 text-sm font-medium">
+            <div className="border-b p-4 text-sm font-medium">
                 [Gallerie]
             </div>
-            <div className="border-b h-12 flex items-center justify-end px-4 text-sm font-black">
+            <div className="border-b h-12 flex items-center justify-end p-4 text-sm font-black">
                 04 / 04
             </div>
-            <div className="flex-1 grid grid-rows-4 gap-4 my-4">
+            <div className="flex-1 grid grid-rows-4 gap-4 my-4">   
                 <div className="flex justify-center border-b-1 pb-4">
                     <img src={img1_galerie} alt=""  />
                 </div>
@@ -123,7 +124,7 @@ export default function Inscription() {
         </div>
     
     </div>
-    
+
     </section>
   );
 }
