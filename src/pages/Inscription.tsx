@@ -10,10 +10,10 @@ export default function Inscription() {
     <section className="relative w-full h-screen  my-8">
    
     
-    <div className="h-full flex">
+    <div className="h-full  flex">  
         
         {/* <!-- Galerie --> */}
-        <div className="w-[237px] border-1 flex flex-col">
+        <div className="w-[14em] h-[44.5em] border-1  flex flex-col">
             <div className="border-b p-4 text-sm font-medium">
                 [Gallerie]
             </div>
