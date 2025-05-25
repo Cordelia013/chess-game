@@ -17,14 +17,14 @@ export default function Actuality() {
           <Separate height="h-1" />
         </div>
 
-        <div className="flex justify-between items-baseline -mt-9">
-          <h2 className="text-[6vw] font-bold">
+        <div className="flex justify-between items-baseline -mt-6">
+          <h2 className="text-[7vw] font-bold">
             Actualités
           </h2>
           <Button text={"voir les actualités"} />
         </div>
-        <div className="my-4">
-          <Separate height="h-1" />
+        <div className="mb-4">
+          <Separate height="h-0.5" />
 </div>
        <div className="flex justify-between">
        <Card 

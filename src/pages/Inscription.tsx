@@ -5,6 +5,7 @@ import img3_galerie from "../assets/Frame_67galerie-2.jpg";
 import img4_galerie from "../assets/Frame_67galerie-3.jpg";
 
 
+
 export default function Inscription() {
   return (
     <section className="relative w-full h-screen  my-8">
@@ -37,33 +38,30 @@ export default function Inscription() {
         </div>
     
         {/* <!-- Section centrale --> */}
-        <div className="w-[300px] border-r border-gray-400 flex flex-col justify-center p-6">
-            <div className="text-right mb-4">
-                <h3 className="font-black text-lg">Rejoindre le club /</h3>
-            </div>
-            <div className="text-sm text-gray-600 space-y-4">
-                <p>
-                    <em>Fianchetto</em> accueille tous les joueurs et joueuses, peu importe leur niveau. 
-                    Que vous soyez curieux de découvrir le jeu ou motivé à perfectionner votre stratégie, 
-                    vous êtes au bon endroit.
-                </p>
-                <p>
-                    Prenez quelques secondes pour remplir le formulaire. Nous vous contacterons rapidement 
-                    pour vous intégrer à la communauté.
-                </p>
-            </div>
-        </div>
+         <div className="w-xl ml-auto flex justify-center items-center bg-gray-100 p-6">
+                  <div className="flex flex-row gap-4 mt-[6vw] ">
+                    <h6 className="font-black text-sm">Rejoindre la club /</h6>
+                    <div>
+                      <p className="text-sm text-left">
+                      Fianchetto accueille tous les joueurs et joueuses, peu <br /> importe leur niveau. Que vous soyez curieux de  <br />découvrir le jeu ou motivé à perfectionner votre <br /> stratégie, vous êtes au bon endroit.<br /><br />
+
+Prenez quelques secondes pour remplir le formulaire. <br /> Nous vous contacterons rapidement pour vous<br />intégrer à la communauté.
+                      </p>
+                 
+                    </div>
+                  </div>
+                </div>
     
         {/* <!-- Formulaire --> */}
-        <div className="flex-1  p-6 flex flex-col justify-between">
+        <div className="flex-1  p-6 flex flex-col justify-end gap-8">
             
             <div>
-                <h1 className="text-6xl font-bold mb-8">Inscription</h1>
+                <h1 className="text-8xl font-bold mb-8">Inscription</h1>
                 
-                <div className="border border-gray-400 rounded-lg overflow-hidden">
+                <div className="border rounded-lg overflow-hidden">
                     
-                    <div className="flex border-b border-gray-400">
-                        <div className="w-48 p-4 border-r border-gray-400 bg-gray-50">
+                    <div className="flex border-b ">
+                        <div className="w-48 p-4 border-r">
                             <label className="font-bold text-sm">Nom complet <span className="text-red-500">*</span></label>
                         </div>
                         <div className="flex-1 p-4">
@@ -72,8 +70,8 @@ export default function Inscription() {
                         </div>
                     </div>
     
-                    <div className="flex border-b border-gray-400">
-                        <div className="w-48 p-4 border-r border-gray-400 bg-gray-50">
+                    <div className="flex border-b ">
+                        <div className="w-48 p-4 border-r  ">
                             <label className="font-bold text-sm">Adresse courriel <span className="text-red-500">*</span></label>
                         </div>
                         <div className="flex-1 p-4">
@@ -82,8 +80,8 @@ export default function Inscription() {
                         </div>
                     </div>
     
-                    <div className="flex border-b border-gray-400">
-                        <div className="w-48 p-4 border-r border-gray-400 bg-gray-50">
+                    <div className="flex border-b ">
+                        <div className="w-48 p-4 border-r ">
                             <label htmlFor="experience-level" className="font-bold text-sm">Niveau d'expérience</label>
                         </div>
                         <div className="flex-1 p-4">
@@ -96,13 +94,13 @@ export default function Inscription() {
                         </div>
                     </div>
     
-                    <div className="flex border-b border-gray-400">
-                        <div className="w-48 p-4 border-r border-gray-400 bg-gray-50">
+                    <div className="flex border-b ">
+                        <div className="w-48 p-4 border-r ">
                             <label className="font-bold text-sm">Message</label>
                         </div>
                         <div className="flex-1 p-4">
                             <textarea placeholder="Precisez vos attentes, motivations et disponibilités" 
-                                                              rows={4} className="w-full text-sm focus:outline-none resize-none"></textarea>
+                                                              rows={4} className="w-full text-sm focus:outline-none resize-none "></textarea>
                         </div>
                     </div>
     
