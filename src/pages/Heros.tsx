@@ -9,7 +9,7 @@ import "../assets/logo.svg";
 export default function Heros() {
   return (
     <section className="relative w-full h-full ">
-      <div className="mx-auto px-4 h-full flex flex-col">
+      <div className="  h-full flex flex-col">
         <Navigation />
         {/* Title */}
           <img

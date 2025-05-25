@@ -43,7 +43,7 @@ export default function App() {
     <GridProvider>
       <GridOverlay />
       {/* Container principal avec sections empilées verticalement */}
-      <div className=" min-h-screen">
+      <div className=" min-h-screen mx-4">
         <Heros />
         <Explication />
         <About />

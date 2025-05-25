@@ -3,7 +3,7 @@ import img_joint from "../assets/img_joint.jpg"
 
 export default function Joint() {
   return (
-    <section className="relative w-full h-screen pb-6 px-4 flex flex-col">
+    <section className="relative w-full h-screen pb-6  flex flex-col">
       <Separate height={"h-0.5 "} />
       <div className="flex-0" />
       <div className="flex flex-col flex-grow h-full">

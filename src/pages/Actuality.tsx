@@ -9,7 +9,7 @@ import { Separate } from "./components/Separate";
 export default function Actuality() {
   return (
     <section className="relative w-full h-screen  ">
-      <div className="mx-auto px-4   h-full flex flex-col">
+      <div className="mx-auto  h-full flex flex-col">
         <div className="">
           <Separate height="h-4 mb-1" />
           <Separate height="h-2.5 mb-1.5" />
@@ -19,7 +19,7 @@ export default function Actuality() {
 
         <div className="flex justify-between items-baseline -mt-9">
           <h2 className="text-[6vw] font-bold">
-            Apprendre
+            Actualités
           </h2>
           <Button text={"voir les actualités"} />
         </div>
