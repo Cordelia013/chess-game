@@ -38,7 +38,7 @@ export default function Inscription() {
         </div>
     
         {/* <!-- Section centrale --> */}
-         <div className="w-xl ml-auto flex justify-center items-center bg-gray-100 p-6">
+         <div className="w-xl ml-auto flex justify-center items-center p-6">
                   <div className="flex flex-row gap-4 mt-[6vw] ">
                     <h6 className="font-black text-sm">Rejoindre la club /</h6>
                     <div>
