@@ -1,4 +1,6 @@
-
+import img1 from "../assets/Frame_41actu-.jpg";
+import img2 from "../assets/Frame_41actu--1.jpg";   
+import img3 from "../assets/Frame_41actu--2.jpg";
 
 import Button from "./components/Button";
 import Card from "./components/Card";
@@ -29,24 +31,24 @@ export default function Actuality() {
     title="Tournoi Universitaire"
     date="01/06/25"
     location="Montréal, Canada"
-    imageUrl="/images/tournoi-universitaire.jpg"
-    imageAlt="Pièces d'échecs sur un échiquier"
+    imageUrl={img1}
+    imageAlt="partie compétition échecs"
+        onClick={() => console.log('Card clicked')}
+          />
+            <Card 
+    title="Tournoi Universitaire"
+    date="01/06/25"
+    location="Montréal, Canada"
+    imageUrl={img2}
+    imageAlt="partie compétition echecs entre générations"
     onClick={() => console.log('Card clicked')}
           />
             <Card 
     title="Tournoi Universitaire"
     date="01/06/25"
     location="Montréal, Canada"
-    imageUrl="/images/tournoi-universitaire.jpg"
-    imageAlt="Pièces d'échecs sur un échiquier"
-    onClick={() => console.log('Card clicked')}
-          />
-            <Card 
-    title="Tournoi Universitaire"
-    date="01/06/25"
-    location="Montréal, Canada"
-    imageUrl="/images/tournoi-universitaire.jpg"
-    imageAlt="Pièces d'échecs sur un échiquier"
+    imageUrl={img3}
+    imageAlt="partie compétition echecs"
     onClick={() => console.log('Card clicked')}
   />
       </div> 
