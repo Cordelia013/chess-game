@@ -13,6 +13,7 @@ interface GridData {
   cellColors: Record<string, string>;
 }
 
+
 export default function GridExplainOptimized() {
   const { gridConfig, cellColors } = gridData as GridData;
   const { gap, defaultColor } = gridConfig;
@@ -22,6 +23,8 @@ export default function GridExplainOptimized() {
     columns: 12,
     rows: 12,
   });
+
+
 
   useEffect(() => {
     const updateGrid = () => {

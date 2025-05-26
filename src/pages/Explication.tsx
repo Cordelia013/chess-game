@@ -1,6 +1,10 @@
 import Grid_explain from "./components/grid_explainPage/grid_explain";
 
+
 export default function Explication() {
+
+
+
   return (
     <section className="relative w-full h-screen overflow-hidden bg-black text-[#F7F0DE]">
       {/* Grille directement dans la section */}
