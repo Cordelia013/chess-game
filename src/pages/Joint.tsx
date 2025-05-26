@@ -1,5 +1,9 @@
+
 import { Separate } from "./components/Separate";
-import img_joint from "../assets/img_joint.jpg"
+import img_joint from "../assets/img_joint.jpg";
+
+
+
 
 export default function Joint() {
   return (
@@ -15,8 +19,13 @@ export default function Joint() {
             <div className="flex-1 border-l-2 border-black">
             <h2 className=" text-[6vw] px-4 font-bold align-bottom leading-[0.8em] mt-8 text-left">
             Apprendre
-          </h2>
+            </h2>
+                 
+
+
             </div>
+
+  
         </div>
         <Separate height={"h-0.5 "} />
         {/* ligne2 */}
