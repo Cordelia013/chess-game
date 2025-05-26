@@ -8,10 +8,7 @@ export default function Explication() {
   return (
     <section className="relative w-full h-screen overflow-hidden bg-black text-[#F7F0DE]">
       {/* Grille directement dans la section */}
-      <Grid_explain mousePosition={{
-        x: 0,
-        y: 0
-      }} />
+      <Grid_explain />
 
       {/* Texte superposé directement */}
       <div

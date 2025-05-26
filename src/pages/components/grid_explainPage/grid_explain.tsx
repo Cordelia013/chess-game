@@ -13,11 +13,7 @@ interface GridData {
   cellColors: Record<string, string>;
 }
 
-interface GridExplainOptimizedProps {
-  mousePosition: { x: number; y: number };
-}
-
-export default function GridExplainOptimized({ mousePosition }: GridExplainOptimizedProps) {
+export default function GridExplainOptimized() {
   const { gridConfig, cellColors } = gridData as GridData;
   const { gap, defaultColor } = gridConfig;
 
