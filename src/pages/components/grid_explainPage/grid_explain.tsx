@@ -28,11 +28,11 @@ export default function GridExplainOptimized() {
       const width = window.innerWidth;
 
       if (width < 640) {
-        // Mobile : grille 6x8
-        setGridDimensions({ columns: 6, rows: 8 });
+        // Mobile : grille 4x6
+        setGridDimensions({ columns: 4, rows: 6 });
       } else if (width < 1024) {
-        // Tablette : grille 8x10
-        setGridDimensions({ columns: 8, rows: 10 });
+        // Tablette : grille 8x6
+        setGridDimensions({ columns: 8, rows: 6 });
       } else {
         // Desktop : grille complète 12x12
         setGridDimensions({
@@ -51,9 +51,9 @@ export default function GridExplainOptimized() {
   const { columns, rows } = gridDimensions;
 
   return (
-    <div className="w-full h-full overflow-hidden">
+    <div className="w-screen h-screen overflow-hidden">
       <div
-        className="w-full h-full grid"
+        className="grid w-full h-full "
         style={{
           gridTemplateColumns: `repeat(${columns}, 1fr)`,
           gridTemplateRows: `repeat(${rows}, 1fr)`,
@@ -69,7 +69,7 @@ export default function GridExplainOptimized() {
           return (
             <div
               key={index}
-              className="flex items-center justify-center text-xs font-mono transition-all duration-300 hover:scale-95"
+              className=" flex items-center justify-center text-xs font-mono transition-all duration-300 hover:scale-95"
               style={{
                 backgroundColor,
                 color: backgroundColor === "#000000" ? "#ffffff" : "#000000",
