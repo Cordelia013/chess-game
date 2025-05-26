@@ -13,10 +13,14 @@ interface GridData {
   cellColors: Record<string, string>;
 }
 
+interface GridExplainOptimizedProps {
+  mousePosition: { x: number; y: number };
+}
 
-export default function GridExplainOptimized() {
+export default function GridExplainOptimized({ mousePosition }: GridExplainOptimizedProps) {
   const { gridConfig, cellColors } = gridData as GridData;
   const { gap, defaultColor } = gridConfig;
+
 
   // Configuration responsive de la grille
   const [gridDimensions, setGridDimensions] = useState({
