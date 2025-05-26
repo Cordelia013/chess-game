@@ -36,22 +36,22 @@ export default function Footer() {
 
 {/* <!-- Colonne gauche : Titre --> */}
 <div className="border-b border-custom-dark h-[32.5px] flex items-center ">
-    <div className="font-black">Liens utiles</div>
+    <div className="font-black">Réseaux</div>
 </div>
 
 {/* <!-- Colonne droite : Menu --> */}
 <div className="flex flex-col">
     <div className="w-full border-b border-custom-dark h-[32.5px] flex items-center">
-        <div className="font-medium">Club</div>
+        <div className="font-medium">Facebook</div>
     </div>
     <div className="w-full border-b border-custom-dark h-[32.5px] flex items-center">
-        <div className="font-medium">Actualités</div>
+        <div className="font-medium">Instagram</div>
     </div>
     <div className="w-full border-b border-custom-dark h-[32.5px] flex items-center">
-        <div className="font-medium">Inscription</div>
+        <div className="font-medium">TikTok</div>
     </div>
     <div className="w-full border-b border-custom-dark h-[32.5px] flex items-center">
-        <div className="font-medium">Contact</div>
+        <div className="font-medium">x</div>
     </div>
 </div>
 </div>
