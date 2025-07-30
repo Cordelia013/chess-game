@@ -12,26 +12,27 @@ body {
 
 /* Scrollbar transparent */
 body::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
+  width: 12px;
+  background: #F7F0DE;
 }
 
 body::-webkit-scrollbar-track {
-  background: transparent;
+  background: #F7F0DE;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: transparent;
+  background: #F7F0DE;
+  border-radius: 6px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: transparent;
+  background: #F7F0DE;
 }
 
 /* Pour Firefox */
 body {
-  scrollbar-width: none;
-  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+  scrollbar-color: #F7F0DE #F7F0DE;
 }
 html {
   overflow-x: hidden;
