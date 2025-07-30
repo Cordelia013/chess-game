@@ -13,20 +13,20 @@ body {
 /* Scrollbar transparent */
 body::-webkit-scrollbar {
   width: 12px;
-  background: #F7F0DE;
+  background: #000000;
 }
 
 body::-webkit-scrollbar-track {
-  background: #F7F0DE;
+  background: #000000;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #F7F0DE;
+  background: #000000;
   border-radius: 6px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: #F7F0DE;
+  background: #000000;
 }
 
 /* Pour Firefox */
