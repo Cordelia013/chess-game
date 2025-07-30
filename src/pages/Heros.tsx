@@ -7,12 +7,12 @@ import { Separate } from "./components/Separate";
 
 export default function Heros() {
   return (
-    <section className="relative w-full min-h-screen">
+    <section className="relative w-full min-h-screen overflow-x-hidden">
       <div className="flex flex-col h-full">
         <Navigation />
         {/* Title */}
         <img
-          className="w-full py-2 md:py-4 hero-title-img"
+          className="w-full max-w-full py-2 md:py-4 hero-title-img"
           src={title}
           alt="Titre de la page d'accueil - Fianchetto"
         />

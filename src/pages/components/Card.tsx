@@ -20,7 +20,7 @@ interface CardProps {
   }: CardProps) {
     return (
       <article 
-        className="group relative w-[460px] bg-surface-light border border-on-surface-light hover:shadow-lg transition-all duration-300 cursor-pointer overflow-hidden "
+        className="group relative w-full max-w-[460px] bg-surface-light border border-on-surface-light hover:shadow-lg transition-all duration-300 cursor-pointer overflow-hidden flex-shrink-0"
         onClick={onClick}
       >
         {/* Image container */}

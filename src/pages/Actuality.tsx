@@ -8,7 +8,7 @@ import { Separate } from "./components/Separate";
 
 export default function Actuality() {
   return (
-    <section className="relative w-full h-screen  ">
+    <section className="relative w-full h-screen overflow-x-hidden">
       <div className="mx-auto  h-full flex flex-col">
         <div className="">
           <Separate height="h-4 mb-1" />
@@ -26,7 +26,7 @@ export default function Actuality() {
         <div className="mb-4">
           <Separate height="h-0.5" />
 </div>
-       <div className="flex justify-between">
+       <div className="flex justify-between gap-4 flex-wrap">
        <Card 
     title="Tournoi Universitaire"
     date="01/06/25"

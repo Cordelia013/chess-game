@@ -8,13 +8,13 @@ import img4_galerie from "../assets/Frame_67galerie-3.jpg";
 
 export default function Inscription() {
   return (
-    <section className="relative w-full h-screen  my-8">
+    <section className="relative w-full h-screen my-8 overflow-x-hidden">
    
     
-    <div className="h-full  flex">  
+    <div className="h-full flex flex-wrap lg:flex-nowrap">  
         
         {/* <!-- Galerie --> */}
-        <div className="w-[14em] h-[44.5em] border-1  flex flex-col">
+        <div className="w-full lg:w-[14em] h-auto lg:h-[44.5em] border-1 flex flex-col flex-shrink-0">
             <div className="border-b p-4 text-sm font-medium">
                 [Gallerie]
             </div>
@@ -38,7 +38,7 @@ export default function Inscription() {
         </div>
     
         {/* <!-- Section centrale --> */}
-         <div className="w-xl ml-auto flex justify-center items-center p-6">
+         <div className="w-full lg:w-xl ml-auto flex justify-center items-center p-6 flex-shrink-0">
                   <div className="flex flex-row gap-4 mt-[6vw] ">
                     <h6 className="font-black text-sm">Rejoindre la club /</h6>
                     <div>
@@ -53,7 +53,7 @@ Prenez quelques secondes pour remplir le formulaire. <br /> Nous vous contactero
                 </div>
     
         {/* <!-- Formulaire --> */}
-        <div className="flex-1  p-6 flex flex-col justify-end gap-8">
+        <div className="flex-1 min-w-0 p-6 flex flex-col justify-end gap-8">
             
             <div>
                 <h1 className="text-8xl font-bold mb-8">Inscription</h1>
