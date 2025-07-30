@@ -21,18 +21,18 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #0000ff;
+    background: #0D1010;
   border-radius: 6px;
 }
 
 html::-webkit-scrollbar-thumb:hover {
-    background: #ffff00;
+    background: #0D1010;
 }
 
 /* Pour Firefox */
 html {
   scrollbar-width: thin;
-  scrollbar-color: #0000ff #F7F0DE;
+  scrollbar-color: #0D1010 #F7F0DE;
 }
 html {
   overflow-x: hidden;
