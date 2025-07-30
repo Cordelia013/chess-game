@@ -17,7 +17,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-   background: #00ff00;
+   background: #F7F0DE;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -32,7 +32,7 @@ html::-webkit-scrollbar-thumb:hover {
 /* Pour Firefox */
 html {
   scrollbar-width: thin;
-  scrollbar-color: #0000ff #00ff00;
+  scrollbar-color: #0000ff #F7F0DE;
 }
 html {
   overflow-x: hidden;
