@@ -51,7 +51,7 @@ export default function Heros() {
           </div>
           {/* Title overlapping the image */}
           <div className="col-span-12 sm:col-start-1 sm:col-span-8 md:col-start-2 lg:col-start-3 md:col-span-8 lg:col-span-6 flex items-center absolute inset-0 pointer-events-none">
-            <h2 className="text-body-12 sm:text-body-12 md:text-body-12 lg:text-body-40 xl:text-body-125 font-bold text-white px-2 sm:px-3 md:px-4 mix-blend-difference z-20 leading-tight">
+            <h2 className="text-body-12 sm:text-body-12 md:text-body-40 lg:text-body-40 xl:text-body-125 font-bold text-white px-2 sm:px-3 md:px-4 mix-blend-difference z-20 leading-tight">
               La stratégie <br className="hidden md:block" /> d'abord.
             </h2>
           </div>
