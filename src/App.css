@@ -13,26 +13,26 @@ body {
 /* Scrollbar pour HTML */
 html::-webkit-scrollbar {
   width: 12px;
-  background: #222555;
+  background: #ff0000;
 }
 
 html::-webkit-scrollbar-track {
-   background: #222555;
+   background: #00ff00;
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #8888;
+    background: #0000ff;
   border-radius: 6px;
 }
 
 html::-webkit-scrollbar-thumb:hover {
-    background: #8888;
+    background: #ffff00;
 }
 
 /* Pour Firefox */
 html {
   scrollbar-width: thin;
-  background: #222555 #222555;
+  scrollbar-color: #0000ff #00ff00;
 }
 html {
   overflow-x: hidden;
