@@ -45,7 +45,7 @@ export default function Heros() {
           </div>
           {/* Title overlapping the image */}
           <div className="col-span-12 sm:col-start-1 sm:col-span-8 md:col-start-2 lg:col-start-3 md:col-span-8 lg:col-span-6 flex items-center absolute inset-0 pointer-events-none">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white px-2 sm:px-3 md:px-4 mix-blend-difference z-20 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white px-2 sm:px-3 md:px-4 mix-blend-difference z-20 leading-tight">
               La stratégie d’abord.
             </h2>
           </div>
@@ -57,7 +57,7 @@ export default function Heros() {
 
           <div className="grid grid-cols-12 gap-2 md:gap-4 mt-3 md:mt-6">
             <div className="col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-6 md:col-start-7 text-left px-2 md:px-0">
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl leading-tight mb-3 sm:mb-4 md:mb-6">
+              <p className="text-base sm:text-lg md:text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl leading-tight mb-3 sm:mb-4 md:mb-6">
                 Rejoignez le club d'échecs de Mat Carlsen, <br className="hidden md:block" /> 
                 ouvert à tous les niveaux.
               </p>
