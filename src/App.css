@@ -10,6 +10,29 @@ body {
   background-color: #F7F0DE;
 }
 
+/* Scrollbar transparent */
+body::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+/* Pour Firefox */
+body {
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+}
 html {
   overflow-x: hidden;
 }
