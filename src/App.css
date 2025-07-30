@@ -32,7 +32,7 @@ html::-webkit-scrollbar-thumb:hover {
 /* Pour Firefox */
 html {
   scrollbar-width: thin;
-  scrollbar-color: #000000 #000000;
+  background: #222555 #1111;
 }
 html {
   overflow-x: hidden;
