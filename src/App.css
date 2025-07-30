@@ -21,7 +21,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #000000;
+    background: #222555;
   border-radius: 6px;
 }
 
