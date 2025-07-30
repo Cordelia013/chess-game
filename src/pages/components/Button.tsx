@@ -6,7 +6,7 @@ interface ButtonProps {
 export default function Button({ text, onClick }: ButtonProps) {
   return (
     <button 
-      className="bg-[#B89B6B] text-white w-auto h-[10vh] uppercase hover:opacity-90 transition-all px-4 "
+      className="bg-[#B89B6B] text-white w-auto h-[10vh] uppercase hover:opacity-90 transition-all px-8"
       onClick={onClick}
     >
       {text}
