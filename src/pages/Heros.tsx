@@ -40,7 +40,7 @@ export default function Heros() {
         </div>
 
         {/* Main content area */}
-        <div className="grid grid-cols-12 gap-2 md:gap-4 my-2 md:my-4 h-48 sm:h-58 md:h-67 lg:h-77 xl:h-86 relative">
+        <div className="grid grid-cols-12 gap-2 md:gap-4 my-2 md:my-4 h-58 sm:h-70 md:h-80 lg:h-92 xl:h-104 relative">
           {/* Image */}
           <div className="col-span-12 sm:col-start-4 sm:col-span-9 md:col-start-6 md:col-span-7">
             <img
