@@ -61,8 +61,8 @@ export default function Heros() {
         <div className="pb-2 md:pb-4 mb-1 md:mb-2">
           <Separate height="h-0.5" />
 
-          <div className="grid grid-cols-12 gap-2 md:gap-4 mt-3 md:mt-6">
-            <div className="col-span-6 col-start-3  sm:col-span-10 sm:col-start-2 md:col-span-12 md:col-start-5 text-left px-2 md:px-0">
+          <div className="grid grid-cols-12 col-span-6 col-start-3  gap-2 md:gap-4 mt-3 md:mt-6">
+            <div className=" sm:col-span-10 sm:col-start-2 md:col-span-12 md:col-start-5 text-left px-2 md:px-0">
               <p className="text-[3vw] leading-tight mb-3 sm:mb-4 md:mb-6">
                 Rejoignez le club d'échecs de Mat Carlsen,{" "}
                 <br className="hidden md:block" />
