@@ -45,7 +45,7 @@ export default function Heros() {
           </div>
           {/* Title overlapping the image */}
           <div className="col-span-12 sm:col-start-1 sm:col-span-8 md:col-start-2 lg:col-start-3 md:col-span-8 lg:col-span-6 flex items-center absolute inset-0 pointer-events-none">
-            <h2 className="text-2xl sm:text-2xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold text-white px-2 sm:px-3 md:px-4 mix-blend-difference z-20 leading-tight">
+            <h2 className="text-2xl font-bold text-white px-2 sm:px-3 md:px-4 mix-blend-difference z-20 leading-tight">
               La stratégie d’abord.
             </h2>
           </div>
