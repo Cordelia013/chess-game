@@ -13,7 +13,7 @@ body {
 /* Scrollbar pour HTML */
 html::-webkit-scrollbar {
   width: 12px;
-  background: red;
+  background: #222555;
 }
 
 html::-webkit-scrollbar-track {
