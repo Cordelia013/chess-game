@@ -23,6 +23,7 @@ export const GridProvider: React.FC<{ children: React.ReactNode }> = ({
   useEffect(() => {
     const getBreakpoint = () => {
       const width = window.innerWidth;
+      if (width >= GRID_BREAKPOINTS["9xl"].minWidth) return "9xl";
       if (width >= GRID_BREAKPOINTS.desktop.minWidth) return "desktop";
       if (width >= GRID_BREAKPOINTS.tablet.minWidth) return "tablet";
       return "mobile";

@@ -1,9 +1,9 @@
 import img_hero from "../assets/heros_img_bg.jpg";
-import title from "../assets/FIANCHETTO.svg"
+import title from "../assets/FIANCHETTO.svg";
 
 import Navigation from "../layout/Navigation";
 import Button from "./components/Button";
-import {Separate} from "./components/Separate";
+import { Separate } from "./components/Separate";
 
 export default function Heros() {
   return (
@@ -11,22 +11,28 @@ export default function Heros() {
       <div className="flex flex-col h-full">
         <Navigation />
         {/* Title */}
-          <img
-            className="w-full py-2 md:py-4 hero-title-img"
-            src={title}
-            alt="Titre de la page d'accueil - Fianchetto"
-          />
+        <img
+          className="w-full py-2 md:py-4 hero-title-img"
+          src={title}
+          alt="Titre de la page d'accueil - Fianchetto"
+        />
 
-          <Separate height="h-2 md:h-4" />
+        <Separate height="h-2 md:h-4" />
 
         {/* Sub-information */}
         <div className="grid grid-cols-12 gap-2 md:gap-4 text-xs md:text-sm py-2">
           <div className="col-span-12 sm:col-span-6 md:col-span-3 text-left mb-1 md:mb-0">
             Club d'échecs pour tous les niveaux
           </div>
-          <div className="col-span-4 sm:col-span-2 md:col-span-3 text-left">Intro /</div>
-          <div className="col-span-4 sm:col-span-2 md:col-span-3 text-left">[En-tête]</div>
-          <div className="col-span-4 sm:col-span-2 md:col-span-3 text-left">C8-0</div>
+          <div className="col-span-4 sm:col-span-2 md:col-span-3 text-left">
+            Intro /
+          </div>
+          <div className="col-span-4 sm:col-span-2 md:col-span-3 text-left">
+            [En-tête]
+          </div>
+          <div className="col-span-4 sm:col-span-2 md:col-span-3 text-left">
+            C8-0
+          </div>
         </div>
 
         <div>
@@ -45,8 +51,8 @@ export default function Heros() {
           </div>
           {/* Title overlapping the image */}
           <div className="col-span-12 sm:col-start-1 sm:col-span-8 md:col-start-2 lg:col-start-3 md:col-span-8 lg:col-span-6 flex items-center absolute inset-0 pointer-events-none">
-            <h2 className="text-2xl font-bold text-white px-2 sm:px-3 md:px-4 mix-blend-difference z-20 leading-tight">
-              La stratégie d’abord.
+            <h2 className="text-body-125 sm:text-body-14 md:text-body-18 lg:text-body-40 xl:text-body-125 font-bold text-white px-2 sm:px-3 md:px-4 mix-blend-difference z-20 leading-tight">
+              La stratégie <br className="hidden md:block" /> d'abord.
             </h2>
           </div>
         </div>
@@ -58,7 +64,8 @@ export default function Heros() {
           <div className="grid grid-cols-12 gap-2 md:gap-4 mt-3 md:mt-6">
             <div className="col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-6 md:col-start-7 text-left px-2 md:px-0">
               <p className="text-base sm:text-lg md:text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl leading-tight mb-3 sm:mb-4 md:mb-6">
-                Rejoignez le club d'échecs de Mat Carlsen, <br className="hidden md:block" /> 
+                Rejoignez le club d'échecs de Mat Carlsen,{" "}
+                <br className="hidden md:block" />
                 ouvert à tous les niveaux.
               </p>
               <Button text="S'inscrire" />

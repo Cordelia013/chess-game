@@ -2,7 +2,6 @@
 @import "tailwindcss";
 
 @layer utilities {
-
   /* Typographie selon ton système */
   .text-titre {
     @apply text-[125px] leading-[100px];
@@ -26,5 +25,26 @@
 
   .text-label {
     @apply text-[14px] leading-normal uppercase;
+  }
+
+  /* Nouvelles classes personnalisées */
+  .text-body-125 {
+    @apply text-[125px] leading-[100px];
+  }
+
+  .text-body-40 {
+    @apply text-[40px] leading-[36px];
+  }
+
+  .text-body-18 {
+    @apply text-[18px] leading-normal;
+  }
+
+  .text-body-14 {
+    @apply text-[14px] leading-normal;
+  }
+
+  .text-body-12 {
+    @apply text-[12px] leading-normal;
   }
 }

@@ -45,9 +45,12 @@ export default {
         // D'après tes styles typographiques
         'titre': ['125px', '100px'],      // 125/100
         'sous-titre': ['40px', '98px'],   // 40/98
-        'body-large': ['14px', 'auto'],
-        'body-medium': ['14px', 'auto'],
-        'body-small': ['12px', 'auto'],
+        'body-125': ['125px', '100px'],   // 125/100
+        'body-40': ['40px', '36px'],      // 40/36
+        'body-18': ['18px', 'auto'],      // 18/auto
+        'body-14': ['14px', 'auto'],      // 14/auto
+        'body-12': ['12px', 'auto'],      // 12/auto
+       
         'label': ['14px', 'auto'],
       },
       

@@ -19,10 +19,18 @@ export const GRID_BREAKPOINTS = {
   desktop: {
     name: "desktop",
     minWidth: 1025,
-    maxWidth: Infinity,
+    maxWidth: 1920, // Limite supérieure pour desktop classique
     columns: 12,
     gutter: 16,
     margin: 16,
+  },
+  "9xl": {
+    name: "9xl",
+    minWidth: 1921,
+    maxWidth: Infinity,
+    columns: 16, // Par exemple, 16 colonnes pour les très grands écrans
+    gutter: 24,
+    margin: 32,
   },
 } as const;
 
