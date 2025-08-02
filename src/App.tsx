@@ -41,7 +41,7 @@ export default function App() {
     <GridProvider>
       <GridOverlay />
       {/* Container principal de la page */}
-      <main className="min-h-screen max-w-screen-3xl mx-auto px-4 scroll-smooth flex flex-col gap-y-4">
+      <main className="min-h-screen w-full max-w-full mx-auto px-4 scroll-smooth flex flex-col gap-y-4 overflow-x-hidden">
         <Heros />
         <Explication />
         <About />

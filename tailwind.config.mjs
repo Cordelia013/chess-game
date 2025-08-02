@@ -46,6 +46,7 @@ export default {
         'titre': ['125px', '100px'],      // 125/100
         'sous-titre': ['40px', '98px'],   // 40/98
         'body-125': ['125px', '100px'],   // 125/100
+        'body-96': ['96px', '76px'],      // 96/76
         'body-40': ['40px', '36px'],      // 40/36
         'body-18': ['18px', 'auto'],      // 18/auto
         'body-14': ['14px', 'auto'],      // 14/auto

@@ -6,7 +6,36 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  overflow-x: hidden;
   background-color: #F7F0DE;
+}
+
+/* Scrollbar pour HTML */
+html::-webkit-scrollbar {
+  width: 12px;
+  background: #ff0000;
+}
+
+html::-webkit-scrollbar-track {
+   background: #F7F0DE;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #0D1010;
+  border-radius: 6px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: #0D1010;
+}
+
+/* Pour Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #0D1010 #F7F0DE;
+}
+html {
+  overflow-x: hidden;
 }
 
 .animate {

@@ -7,13 +7,13 @@ import img_joint from "../assets/img_joint.jpg";
 
 export default function Joint() {
   return (
-    <section className="relative w-full h-screen pb-6  flex flex-col">
+    <section className="relative w-full h-screen pb-6 flex flex-col overflow-x-hidden">
       <Separate height={"h-0.5 "} />
       <div className="flex-0" />
       <div className="flex flex-col flex-grow h-full">
         {/* ligne1 */}
         <div className="flex flex-1" style={{ flexBasis: "80%", minHeight: 0 }}>
-          <div className="" style={{ width: "32vw" }}>
+          <div className="flex-shrink-0" style={{ width: "32vw", maxWidth: "32vw" }}>
             {/* Première row, première colonne */}
           </div>
             <div className="flex-1 border-l-2 border-black">
@@ -31,7 +31,7 @@ export default function Joint() {
         {/* ligne2 */}
         <div className="flex flex-1 " style={{ flexBasis: "40%", minHeight: 0 }}>
           <img src={img_joint} alt="Joint chess club" className="absolute ml-30 bottom-32" />
-          <div className="" style={{ width: "32vw" }}>
+          <div className="flex-shrink-0" style={{ width: "32vw", maxWidth: "32vw" }}>
             {/* Deuxième row, première colonne */}
           </div>
 
