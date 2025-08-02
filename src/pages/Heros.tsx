@@ -7,21 +7,28 @@ import { Separate } from "./components/Separate";
 
 export default function Heros() {
   return (
-    <section className="relative w-full min-h-screen">
-      <div className="flex flex-col h-full">
+    <section className="relative w-full h-screen flex flex-col">
+      {/* Header avec Navigation */}
+      <header className="flex-shrink-0">
         <Navigation />
-        {/* Title */}
+      </header>
+
+      {/* Logo/Titre principal */}
+      <div className="flex-shrink-0 px-4 py-2 md:py-4">
         <img
-          className="w-full py-2 md:py-4 hero-title-img"
+          className="w-full max-h-[25vh] object-contain"
           src={title}
           alt="Titre de la page d'accueil - Fianchetto"
         />
+      </div>
 
-        <Separate height="h-2 md:h-4" />
+      {/* Séparateur */}
+      <Separate height="h-1 md:h-2" />
 
-        {/* Sub-information */}
-        <div className="grid grid-cols-12 gap-2 md:gap-4 text-xs md:text-sm py-2">
-          <div className="col-span-12 sm:col-span-6 md:col-span-3 text-left mb-1 md:mb-0">
+      {/* Informations secondaires */}
+      <div className="flex-shrink-0 px-4 py-2">
+        <div className="grid grid-cols-12 gap-2 md:gap-4 text-xs md:text-sm">
+          <div className="col-span-12 sm:col-span-6 md:col-span-3 text-left">
             Club d'échecs pour tous les niveaux
           </div>
           <div className="col-span-4 sm:col-span-2 md:col-span-3 text-left">
@@ -34,36 +41,39 @@ export default function Heros() {
             C8-0
           </div>
         </div>
+      </div>
 
-        <div>
-          <Separate height="h-0.5" />
-        </div>
+      <Separate height="h-0.5" />
 
-        {/* Main content area */}
-        <div className="grid grid-cols-12 gap-2 md:gap-4 my-2 md:my-4 h-40 sm:h-48 md:h-56 lg:h-64 xl:h-72 relative">
+      {/* Zone principale avec image et titre */}
+      <div className="flex-1 relative min-h-0 lg:mx-40">
+        <div className="absolute inset-0 grid grid-cols-12 gap-2 md:gap-4 p-4 ">
           {/* Image */}
-          <div className="col-span-12 sm:col-start-4 sm:col-span-9 md:col-start-6 md:col-span-7">
+          <div className="col-span-12 sm:col-start-4 sm:col-span-9 md:col-start-6 md:col-span-7 relative ">
             <img
               src={img_hero}
               alt="Hero image"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover object-center "
             />
           </div>
-          {/* Title overlapping the image */}
-          <div className="col-span-12 sm:col-start-1 sm:col-span-8 md:col-start-2 lg:col-start-3 md:col-span-8 lg:col-span-6 flex items-center absolute inset-0 pointer-events-none">
-            <h2 className="text-body-125 sm:text-body-14 md:text-body-18 lg:text-body-40 xl:text-body-125 font-bold text-white px-2 sm:px-3 md:px-4 mix-blend-difference z-20 leading-tight">
+
+          {/* Titre superposé */}
+          <div className="col-span-12 sm:col-start-1 sm:col-span-8 md:col-start-2 lg:col-start-3 md:col-span-8 lg:col-span-6 flex items-center absolute inset-0 pointer-events-none p-4">
+            <h2 className="text-[10vw] sm:text-[8vw] md:text-[5vw] lg:text-[3vw] xl:text-[5.5vw] font-bold text-white mix-blend-difference z-20 leading-tight">
               La stratégie <br className="hidden md:block" /> d'abord.
             </h2>
           </div>
         </div>
+      </div>
 
-        {/* Bottom section */}
-        <div className="pb-2 md:pb-4 mb-1 md:mb-2">
-          <Separate height="h-0.5" />
+      {/* Footer avec contenu et bouton */}
+      <footer className="flex-shrink-0 px-4 pb-4">
+        <Separate height="h-0.5" />
 
-          <div className="grid grid-cols-12 gap-2 md:gap-4 mt-3 md:mt-6">
-            <div className="col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-6 md:col-start-7 text-left px-2 md:px-0">
-              <p className="text-base sm:text-lg md:text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl leading-tight mb-3 sm:mb-4 md:mb-6">
+        <div className="mt-4 md:mt-6">
+          <div className="grid grid-cols-12 gap-2 md:gap-4">
+            <div className="col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-6 md:col-start-7 text-left">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl leading-tight mb-3 sm:mb-4 md:mb-6">
                 Rejoignez le club d'échecs de Mat Carlsen,{" "}
                 <br className="hidden md:block" />
                 ouvert à tous les niveaux.
@@ -71,31 +81,31 @@ export default function Heros() {
               <Button text="S'inscrire" />
             </div>
           </div>
+        </div>
 
-          {/* Scroll indicator */}
-          <div className="flex justify-end mt-2 md:mt-4 px-2 md:px-0">
-            <div className="text-xs sm:text-sm font-black uppercase flex items-center gap-1 sm:gap-2">
-              scroll to explore
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="rotate-45 sm:w-5 sm:h-5 md:w-6 md:h-6"
-              >
-                <path
-                  d="M5 12H19M19 12L12 5M19 12L12 19"
-                  stroke="currentColor"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
+        {/* Indicateur de scroll */}
+        <div className="flex justify-end mt-4 md:mt-6">
+          <div className="text-xs sm:text-sm font-black uppercase flex items-center gap-1 sm:gap-2">
+            scroll to explore
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="rotate-45 sm:w-5 sm:h-5 md:w-6 md:h-6"
+            >
+              <path
+                d="M5 12H19M19 12L12 5M19 12L12 19"
+                stroke="currentColor"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </div>
         </div>
-      </div>
+      </footer>
     </section>
   );
 }
